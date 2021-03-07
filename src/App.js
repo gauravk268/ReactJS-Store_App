@@ -39,7 +39,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar cartItems={cartItems} />
         <Switch>
           <Route
             path="/"

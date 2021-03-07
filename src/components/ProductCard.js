@@ -55,12 +55,16 @@ const ProductCard = ({ item, setCartItems, cartItems }) => {
         <div className="card-body">
           <button
             className={displayItem.addToCartButtonClass}
-            onClick={addItemToCart}
+            onClick={
+              displayItem.addItemToCart ? removeItemFromCart : addItemToCart
+            }
           >
             {displayItem.addToCartButtonValue}
           </button>
-          <button className="btn btn-primary" onClick={removeItemFromCart}>
-            Order Now
+
+          {/* <button onClick={view ? this.handleEdit : this.handleSave}></button> */}
+          <button className="btn btn-primary" onClick={addItemToCart}>
+            <a href="/cart">Order Now</a>
           </button>
         </div>
       </div>

@@ -1,0 +1,12 @@
+.our-team-card {
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 2rem auto;
+  max-width: 250px;
+  font-family: "Poppins", sans-serif;
+}
+
+.our-team-member.our-team-img img {
+  /* margin: 0 1rem; */
+  /* border: 2px solid red; */
+}
