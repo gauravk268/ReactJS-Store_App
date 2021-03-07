@@ -6,7 +6,7 @@
 ## Functionalities:
 - Show products on home screen
 - Add products to cart
-(More functions will be updated)
+- (More functions will be updated)
 	
 ## Installation and Setup Instructions
 
