@@ -1,0 +1,74 @@
+.contact-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact.contact-title{
+	font-size: 1.5rem;
+	font-family: 'Poppins', sans-serif;
+	margin: 1rem;
+}
+
+.contact{
+	flex: 1;
+}
+
+.contact-form{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 5rem;
+}
+
+.contact-form-body{
+	flex: 0.5;
+}
+
+.contact-detail{
+	flex: 2;
+	min-width: 300px;
+	padding: 1rem;
+}
+
+.feedback-wrapper{
+	flex: 3;
+	border: 2px solid grey;
+	border-radius: 5px;
+}
+
+.contact-form-body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+}
+
+.contact.contact-heading{
+	font-size: 1.5rem;
+	margin: 1rem;
+}
+
+.contact.contact-msg{
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 2rem;
+}
+
+.feedback-wrapper{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 500px;
+	padding: 1rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.feedback-element{
+  flex: 1;
+}
+
+.feedback-body .form-control{
+  min-height: 100px;
+}

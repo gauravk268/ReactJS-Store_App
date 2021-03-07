@@ -1,0 +1,23 @@
+.about-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about{
+	flex: 1;
+	/* border: 2px solid red; */
+}
+
+.about.about-title{
+	font-size: 1.5rem;
+	font-family: 'Poppins', sans-serif;
+	margin: 1rem;
+}
+
+.about.about-msg{
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 2rem;
+}

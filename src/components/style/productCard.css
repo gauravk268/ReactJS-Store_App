@@ -1,0 +1,33 @@
+.product-card {
+  /* display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center; */
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.card {
+  width: 18rem;
+  margin: 1rem;
+}
+
+button {
+  margin: 2px;
+}
+
+.product-card-element {
+  display: flex;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}

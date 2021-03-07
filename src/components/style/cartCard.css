@@ -1,0 +1,29 @@
+.cart-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 3rem;
+  max-width: 700px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-card-img img {
+  max-width: 100px;
+}
+
+.cart-card-img {
+  flex: 1;
+  /* border: 1px solid grey; */
+  margin: 5px;
+}
+
+.cart-card-detail {
+  flex: 3;
+  /* border: 1px solid grey; */
+  margin: 5px;
+  text-align: left;
+  padding-left: 3rem;
+}

@@ -1,0 +1,74 @@
+const user = [{
+  "id": 1,
+  "first_name": "Jermain",
+  "last_name": "Dreghorn",
+  "email": "jdreghorn0@go.com",
+  "gender": "Bigender",
+  "password": "4CGV1vpo5ggU"
+}, {
+  "id": 2,
+  "first_name": "Sonya",
+  "last_name": "Dalrymple",
+  "email": "sdalrymple1@va.gov",
+  "gender": "Non-binary",
+  "password": "7S66nkcIRz1"
+}, {
+  "id": 3,
+  "first_name": "Tess",
+  "last_name": "Skitterel",
+  "email": "tskitterel2@ycombinator.com",
+  "gender": "Non-binary",
+  "password": "n1DmRoWF3"
+}, {
+  "id": 4,
+  "first_name": "Genvieve",
+  "last_name": "Olivari",
+  "email": "golivari3@wordpress.com",
+  "gender": "Agender",
+  "password": "FvYBSb103oYH"
+}, {
+  "id": 5,
+  "first_name": "Chandler",
+  "last_name": "Trustie",
+  "email": "ctrustie4@techcrunch.com",
+  "gender": "Female",
+  "password": "6ZBwvLBzv"
+}, {
+  "id": 6,
+  "first_name": "Kori",
+  "last_name": "Yurukhin",
+  "email": "kyurukhin5@apache.org",
+  "gender": "Male",
+  "password": "aqIJteuJ"
+}, {
+  "id": 7,
+  "first_name": "Gwenny",
+  "last_name": "Strelitzki",
+  "email": "gstrelitzki6@elegantthemes.com",
+  "gender": "Male",
+  "password": "6sGQYNRpBmYM"
+}, {
+  "id": 8,
+  "first_name": "Dun",
+  "last_name": "Wynrehame",
+  "email": "dwynrehame7@mysql.com",
+  "gender": "Male",
+  "password": "XpzS4S"
+}, {
+  "id": 9,
+  "first_name": "Karlis",
+  "last_name": "Simenel",
+  "email": "ksimenel8@amazon.co.uk",
+  "gender": "Genderqueer",
+  "password": "XeZSYA43hhH3"
+}, {
+  "id": 10,
+  "first_name": "Tore",
+  "last_name": "Ivanchikov",
+  "email": "tivanchikov9@shop-pro.jp",
+  "gender": "Genderqueer",
+  "password": "5Vq3Am0QpT"
+}];
+
+
+export default user;

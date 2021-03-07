@@ -1,0 +1,15 @@
+.product-view {
+  margin: 2rem;
+  justify-content: center;
+  background-color: rgb(238, 202, 238);
+}
+
+a {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4rem;
+}
