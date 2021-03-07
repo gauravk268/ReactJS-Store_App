@@ -14,25 +14,25 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
+    const getLocalCart = () => {
+      if (localStorage.getItem("cartItems") === null) {
+        localStorage.setItem("cartItems", JSON.stringify([]));
+      } else {
+        let cartItemsLocal = JSON.parse(localStorage.getItem("cartItems"));
+        setCartItems(cartItemsLocal);
+      }
+    };
+
     getLocalCart();
   }, []);
 
   useEffect(() => {
+    const saveLocalCart = () => {
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    };
+
     saveLocalCart();
   }, [cartItems]);
-
-  const saveLocalCart = () => {
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  };
-
-  const getLocalCart = () => {
-    if (localStorage.getItem("cartItems") === null) {
-      localStorage.setItem("cartItems", JSON.stringify([]));
-    } else {
-      let cartItemsLocal = JSON.parse(localStorage.getItem("cartItems"));
-      setCartItems(cartItemsLocal);
-    }
-  };
 
   return (
     <Router>
