@@ -7,14 +7,18 @@ const Cart = ({ cartItems, setCartItems }) => {
     <div className="cart-page">
       <h1>Cart Page</h1>
       <div className="cart-items jumbotron">
-        {cartItems.map((item) => (
-          <CartCard
-            key={item.id}
-            item={item}
-            cartItems={cartItems}
-            setCartItems={setCartItems}
-          />
-        ))}
+        {cartItems.map((item) => {
+          if (item.id >= 0) {
+            return (
+              <CartCard
+                key={item.id}
+                item={item}
+                cartItems={cartItems}
+                setCartItems={setCartItems}
+              />
+            );
+          }
+        })}
       </div>
     </div>
   );

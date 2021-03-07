@@ -34,6 +34,8 @@ function App() {
     saveLocalCart();
   }, [cartItems]);
 
+  useEffect(() => {}, [items]);
+
   return (
     <Router>
       <div className="App">

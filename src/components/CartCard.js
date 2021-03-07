@@ -5,6 +5,7 @@ const CartCard = ({ item, cartItems, setCartItems }) => {
   const handleCartItemRemove = () => {
     setCartItems(cartItems.filter((cartItem) => cartItem.id !== item.id));
   };
+
   return (
     <div className="cart-card">
       <div className="cart-card-img">
