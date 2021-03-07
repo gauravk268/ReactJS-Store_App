@@ -18,6 +18,7 @@ const Cart = ({ cartItems, setCartItems }) => {
               />
             );
           }
+          return null;
         })}
       </div>
     </div>

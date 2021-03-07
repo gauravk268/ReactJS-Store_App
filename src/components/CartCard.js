@@ -9,7 +9,7 @@ const CartCard = ({ item, cartItems, setCartItems }) => {
   return (
     <div className="cart-card">
       <div className="cart-card-img">
-        <img src={item.image} alt="..."></img>
+        {/* <img src={item.image} alt="..."></img> */}
       </div>
       <div className="cart-card-detail">
         <h5>{item.title}</h5>

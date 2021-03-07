@@ -1,35 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./style/productCard.css";
 
 const ProductCard = ({ item, setCartItems, cartItems }) => {
   const [displayItem, updateItem] = useState(item);
+  // const [count, setCount] = useState(0);
+
+  // const increment = () => {
+  //   setCount(count + 1);
+  // };
 
   const addItemToCart = () => {
-    updateItem({
-      ...displayItem,
-      addedToCart: true,
-      addToCartButtonClass: "btn btn-danger",
-      addToCartButtonValue: "Remove from Cart",
-    });
+    updateItem(
+      (displayItem.addItemToCart = true),
+      (displayItem.addToCartButtonClass = "btn btn-danger"),
+      (displayItem.addToCartButtonValue = "Remove from Cart")
+    );
 
     setCartItems([...cartItems, displayItem]);
   };
 
   const removeItemFromCart = () => {
-    updateItem({
-      ...displayItem,
-      addedToCart: false,
-      addToCartButtonClass: "btn btn-info",
-      addToCartButtonValue: "Add to Cart",
-    });
+    updateItem(
+      (displayItem.addItemToCart = false),
+      (displayItem.addToCartButtonClass = "btn btn-info"),
+      (displayItem.addToCartButtonValue = "Add to Cart")
+    );
 
-    setCartItems(cartItems.filter((item) => item.id !== displayItem.id));
+    setCartItems(
+      cartItems.filter((mainItem) => mainItem.id !== displayItem.id)
+    );
   };
 
   return (
     <div className="product-card col-3 col-lg-4 col-md-6 col-sm-12">
+      {/* <div>
+        <button className="btn btn-primary" onClick={increment}>
+          {displayItem.price}
+        </button>
+        <h1>{count}</h1>
+      </div> */}
       <div className="card">
-        <img src={displayItem.image} className="card-img-top" alt="..."></img>
+        {/* <img src={displayItem.image} className="card-img-top" alt="..."></img> */}
         <div className="card-body">
           <h5 className="card-title">{displayItem.title}</h5>
           {/* <p className="card-text">{description}</p> */}
