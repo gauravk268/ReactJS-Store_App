@@ -73,7 +73,7 @@
   min-height: 100px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 868px) {
   .contact-form {
     flex-direction: column;
     padding-bottom: 2rem;

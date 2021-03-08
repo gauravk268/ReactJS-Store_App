@@ -40,7 +40,7 @@ const ProductCard = ({ item, setCartItems, cartItems }) => {
         <h1>{count}</h1>
       </div> */}
       <div className="card">
-        {/* <img src={displayItem.image} className="card-img-top" alt="..."></img> */}
+        <img src={displayItem.image} className="card-img-top" alt="..."></img>
         <div className="card-body">
           <h5 className="card-title">{displayItem.title}</h5>
           {/* <p className="card-text">{description}</p> */}

@@ -3,9 +3,12 @@ import "./style/ourTeam.css";
 
 const OurTeam = ({ teamMember }) => {
   return (
-    <div className="our-team-card col-4">
+    <div className="our-team-card col-lg-4 col-md-6 col-sm-12">
       <div className="our-team-member our-team-img">
-        <img src={teamMember.image} alt="..."></img>
+        <img
+          src="https://cdn.iconscout.com/icon/free/png-512/laptop-user-1-1179329.png"
+          alt="..."
+        ></img>
       </div>
       <div className="our-team-member our-team-detail">
         <div>

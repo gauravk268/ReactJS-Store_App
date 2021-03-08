@@ -21,6 +21,9 @@ const About = () => {
         <p>{about.p1}</p>
       </div>
 
+      <div className="about about-title">
+        <h1>Our Team</h1>
+      </div>
       <div className="our-team-container row container">
         {ourTeam.map((teamMember) => (
           <OurTeam teamMember={teamMember} />
