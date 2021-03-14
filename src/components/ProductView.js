@@ -1,13 +1,8 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import products from "./data/products";
+// import products from "./data/products";
 
-const ProductView = ({ setItems, setCartItems, items, cartItems }) => {
-  const getProducts = () => {
-    setItems(products);
-  };
-  getProducts();
-
+const ProductView = ({ setCartItems, items, cartItems }) => {
   return (
     <div className="product-view row jumbotron">
       {items.map((item) => (

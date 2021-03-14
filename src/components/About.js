@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import about from "./data/about";
 import OurTeam from "./OurTeam";
-// import "./style/about.css";
 import team from "./data/team";
 
 const About = () => {

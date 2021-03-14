@@ -36,7 +36,26 @@ function App() {
     saveLocalCart();
   }, [cartItems]);
 
-  useEffect(() => {}, [items]);
+  useEffect(() => {
+    const getProducts = async () => {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const data = await response.json();
+      // console.log(data);
+      setItems(
+        data.map((item) => {
+          return {
+            ...item,
+            addedToCart: false,
+            addToCartButtonValue: "Add to Cart",
+            addToCartButtonClass: "btn btn-info",
+          };
+        })
+      );
+      // console.log(data);
+    };
+
+    getProducts();
+  }, []);
 
   return (
     <Router>
@@ -48,7 +67,6 @@ function App() {
             exact
             component={() => (
               <Home
-                setItems={setItems}
                 setCartItems={setCartItems}
                 items={items}
                 cartItems={cartItems}
@@ -70,12 +88,11 @@ function App() {
   );
 }
 
-const Home = ({ setItems, setCartItems, items, cartItems }) => {
+const Home = ({ setCartItems, items, cartItems }) => {
   return (
     <div>
       <h1>Home Page</h1>
       <ProductView
-        setItems={setItems}
         setCartItems={setCartItems}
         items={items}
         cartItems={cartItems}
