@@ -267,6 +267,7 @@ img {
 .card {
   width: 18rem;
   margin: 1rem;
+  margin: 0 auto;
 }
 
 button {

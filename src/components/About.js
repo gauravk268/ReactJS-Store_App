@@ -6,7 +6,7 @@ import team from "./data/team";
 const About = () => {
   const ourTeam = useState(team)[0];
   return (
-    <div className="about-section">
+    <div className="about-section container">
       <div className="about about-title">
         <h1>About Us</h1>
       </div>

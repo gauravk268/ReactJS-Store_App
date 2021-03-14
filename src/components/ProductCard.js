@@ -31,7 +31,7 @@ const ProductCard = ({ item, setCartItems, cartItems }) => {
   };
 
   return (
-    <div className="product-card col-3 col-lg-4 col-md-6 col-sm-12">
+    <div className="product-card col-xl-3 col-lg-4 col-md-6 col-sm-12">
       {/* <div>
         <button className="btn btn-primary" onClick={increment}>
           {displayItem.price}
