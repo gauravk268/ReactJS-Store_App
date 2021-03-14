@@ -1,11 +1,13 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Cart from "./components/Cart";
-import Contact from "./components/Contact";
-import ProductView from "./components/ProductView";
-// import products from "./components/data/products";
+import {
+  Navbar,
+  About,
+  Cart,
+  Contact,
+  ProductView,
+  Error404,
+} from "./components/";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import db from './components/firebase/config';
 
@@ -61,6 +63,7 @@ function App() {
             )}
           />
           <Route path="/contact" component={() => <Contact />} />
+          <Route path="*" component={() => <Error404 />} />
         </Switch>
       </div>
     </Router>

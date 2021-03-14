@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  font-family: "Montserrat", sans-serif, "Poppins", sans-serif;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,10 +12,14 @@ nav{
   color: white;
 }
 
-.nav-links{
+.nav-links {
   width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.error-404-section {
+  font-family: "Montserrat", sans-serif;
 }
