@@ -5,7 +5,7 @@ import "./style/about.css";
 import team from "./data/team";
 
 const About = () => {
-  const [ourTeam, setOurTeam] = useState(team);
+  const ourTeam = useState(team)[0];
   return (
     <div className="about-section">
       <div className="about about-title">
