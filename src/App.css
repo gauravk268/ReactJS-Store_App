@@ -112,6 +112,20 @@ nav {
 
 /* OurTeam Component Styling Ends */
 
+/* Cart Component Styling Starts */
+
+.no-product-in-cart .icon {
+  color: red;
+  border: 5px solid red;
+  font-size: 8rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 10rem;
+}
+
+/* Cart Component Styling Ends */
+
 /* CartCard Component Styling Starts */
 
 .cart-card {
