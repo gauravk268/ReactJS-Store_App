@@ -2,6 +2,16 @@ import React from "react";
 import CartCard from "./CartCard";
 
 const Cart = ({ cartItems, setCartItems }) => {
+  let totalCartValue = 0;
+
+  const calculateTotalCartValue = () => {
+    cartItems.forEach((item) => {
+      totalCartValue += item.price;
+    });
+  };
+
+  calculateTotalCartValue();
+
   const ifCartEmpty = () => {
     if (cartItems.length === 0) {
       return (
@@ -16,9 +26,8 @@ const Cart = ({ cartItems, setCartItems }) => {
     }
   };
   return (
-    <div className="cart-page container">
-      <h1>Cart Page</h1>
-      <div className="cart-items jumbotron">
+    <div className="cart-page container jumbotron">
+      <div className="cart-items">
         {cartItems.map((item) => {
           if (item.id >= 0) {
             return (
@@ -34,6 +43,12 @@ const Cart = ({ cartItems, setCartItems }) => {
         })}
 
         {ifCartEmpty()}
+      </div>
+      <div className="cart-items cart-detail">
+        <button className="btn btn-info ">
+          Cart Total: {totalCartValue} $
+        </button>
+        <button className="btn btn-primary ">Proceed to Buy</button>
       </div>
     </div>
   );

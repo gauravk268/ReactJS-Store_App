@@ -67,6 +67,11 @@ nav {
   color: red;
 }
 
+/* .nav-item:hover {
+  background-color: #0080ff;
+  color: #fff;
+} */
+
 /* Navbar Component Styling Ends */
 
 /* About Component Styling Starts */
@@ -122,6 +127,24 @@ nav {
   margin: 0 auto;
   border-radius: 50%;
   width: 10rem;
+}
+
+.cart-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-items {
+  /* flex: 1; */
+}
+
+.cart-items.cart-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-items .btn {
+  /* flex: 1; */
 }
 
 /* Cart Component Styling Ends */
