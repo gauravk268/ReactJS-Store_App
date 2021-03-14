@@ -23,3 +23,269 @@ nav {
 .error-404-section {
   font-family: "Montserrat", sans-serif;
 }
+
+/* Navbar Component Styling Starts */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background: rgb(239, 227, 227);
+}
+
+.navbar-item {
+  flex: 1;
+}
+
+.navbar-item.brand {
+  flex: 2;
+  font-size: 2rem;
+  /* border: 2px solid red; */
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-item.navbar-link-wrapper {
+  flex: 3;
+  /* border: 2px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5rem;
+}
+
+.navbar-link {
+  flex: 1;
+  /* border: 2px solid green; */
+}
+
+.nav-item,
+.nav-item a {
+  font-family: "Montserrat", sans-serif;
+  color: red;
+}
+
+/* Navbar Component Styling Ends */
+
+/* About Component Styling Starts */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about {
+  flex: 1;
+  /* border: 2px solid red; */
+}
+
+.about.about-title {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+}
+
+.about.about-msg {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+}
+
+.our-team-container {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+/* About Component Styling Ends */
+
+/* OurTeam Component Styling Starts */
+
+.our-team-card {
+  display: grid;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* OurTeam Component Styling Ends */
+
+/* CartCard Component Styling Starts */
+
+.cart-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 3rem;
+  max-width: 700px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-card-img img {
+  max-width: 100px;
+}
+
+.cart-card-img {
+  flex: 1;
+  /* border: 1px solid grey; */
+  margin: 5px;
+}
+
+.cart-card-detail {
+  flex: 3;
+  /* border: 1px solid grey; */
+  margin: 5px;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+/* CartCard Component Styling Ends */
+
+/* Contact Component Styling Starts */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact.contact-title {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+}
+
+.contact {
+  flex: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 5rem;
+}
+
+.contact-form-body {
+  flex: 0.5;
+}
+
+.contact-detail {
+  flex: 2;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.feedback-wrapper {
+  flex: 3;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.contact-form-body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.contact.contact-heading {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.contact.contact-msg {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+}
+
+.feedback-wrapper {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 500px;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.feedback-element {
+  flex: 1;
+}
+
+.feedback-body .form-control {
+  min-height: 100px;
+}
+
+@media (max-width: 868px) {
+  .contact-form {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Contact Component Styling Ends */
+
+/* ProductCard Component Styling Starts */
+
+.product-card {
+  /* display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center; */
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.card {
+  width: 18rem;
+  margin: 1rem;
+}
+
+button {
+  margin: 2px;
+}
+
+.product-card-element {
+  display: flex;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+/* ProductCard Component Styling Ends */
+
+/* ProductView Component Styling Starts */
+
+.product-view {
+  margin: 2rem;
+  justify-content: center;
+  background-color: rgb(238, 202, 238);
+}
+
+a {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4rem;
+}
+
+/* ProductView Component Styling Ends */

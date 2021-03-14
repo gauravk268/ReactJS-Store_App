@@ -1,6 +1,5 @@
 import React from "react";
 import CartCard from "./CartCard";
-import "./style/cart.css";
 
 const Cart = ({ cartItems, setCartItems }) => {
   return (

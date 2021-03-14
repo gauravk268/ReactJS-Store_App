@@ -1,5 +1,4 @@
 import React from "react";
-import "./style/cartCard.css";
 
 const CartCard = ({ item, cartItems, setCartItems }) => {
   const handleCartItemRemove = () => {

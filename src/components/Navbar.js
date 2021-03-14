@@ -1,5 +1,3 @@
-import "./style/navbar.css";
-
 const Navbar = ({ cartItems }) => {
   const countCartItems = cartItems.length;
   return (

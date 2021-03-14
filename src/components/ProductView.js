@@ -1,7 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import products from "./data/products";
-import "./style/productView.css";
 
 const ProductView = ({ setItems, setCartItems, items, cartItems }) => {
   const getProducts = () => {

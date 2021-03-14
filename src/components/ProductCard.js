@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./style/productCard.css";
 
 const ProductCard = ({ item, setCartItems, cartItems }) => {
   const [displayItem, updateItem] = useState(item);
