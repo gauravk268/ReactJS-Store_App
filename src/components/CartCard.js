@@ -51,6 +51,7 @@ const CartCard = ({ item, cartItems, setCartItems }) => {
         </h5>
 
         <button className="btn btn-danger" onClick={handleCartItemRemove}>
+          {/* <img src="/fontawesome/solid/trash-alt.svg" alt="..."></img> */}
           Remove Item
         </button>
 

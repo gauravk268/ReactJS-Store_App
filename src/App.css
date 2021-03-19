@@ -1,23 +1,7 @@
 .App {
   text-align: center;
   font-family: "Montserrat", sans-serif, "Poppins", sans-serif;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-  background: rgb(73, 79, 82);
-  color: white;
-}
-
-.nav-links {
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  padding-top: 4rem;
 }
 
 .error-404-section {
@@ -29,26 +13,47 @@ nav {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   background: rgb(239, 227, 227);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
-.navbar-item {
+.navbar-brand a,
+.navbar-item a {
+  color: black;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.navbar-child.navbar-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-right-child.navbar-item {
+  margin: 5px;
+}
+
+/* .navbar-item {
   flex: 1;
 }
 
 .navbar-item.brand {
   flex: 2;
   font-size: 2rem;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   font-family: "Poppins", sans-serif;
 }
 
 .navbar-item.navbar-link-wrapper {
   flex: 3;
-  /* border: 2px solid red; */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -58,18 +63,12 @@ nav {
 
 .navbar-link {
   flex: 1;
-  /* border: 2px solid green; */
 }
 
 .nav-item,
 .nav-item a {
   font-family: "Montserrat", sans-serif;
   color: red;
-}
-
-/* .nav-item:hover {
-  background-color: #0080ff;
-  color: #fff;
 } */
 
 /* Navbar Component Styling Ends */
