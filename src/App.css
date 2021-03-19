@@ -147,6 +147,12 @@ nav {
   /* flex: 1; */
 }
 
+.cart-detail button.proceed-to-buy,
+.cart-detail button.cart-total {
+  max-width: 40vw;
+  margin: 1rem auto;
+}
+
 /* Cart Component Styling Ends */
 
 /* CartCard Component Styling Starts */
@@ -158,7 +164,6 @@ nav {
   border: 1px solid grey;
   border-radius: 5px;
   margin: 5px;
-  margin-left: 3rem;
   max-width: 700px;
   font-family: "Poppins", sans-serif;
 }
@@ -179,6 +184,17 @@ nav {
   margin: 5px;
   text-align: left;
   padding-left: 3rem;
+}
+
+.cart-card .cart-card-detail button.increase-item,
+.cart-card .cart-card-detail button.decrease-item {
+  border: 2px solid black;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 0;
+  color: white;
+  border-radius: 50%;
 }
 
 /* CartCard Component Styling Ends */
@@ -327,3 +343,9 @@ a {
 }
 
 /* ProductView Component Styling Ends */
+
+@media only screen and (max-width: 768px) {
+  .cart-page {
+    flex-direction: column;
+  }
+}

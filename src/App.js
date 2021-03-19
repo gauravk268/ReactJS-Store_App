@@ -10,10 +10,11 @@ import {
 } from "./components/";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import db from './components/firebase/config';
+import products from "./components/data/products";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState([...products]);
 
   useEffect(() => {
     const getLocalCart = () => {
@@ -36,26 +37,26 @@ function App() {
     saveLocalCart();
   }, [cartItems]);
 
-  useEffect(() => {
-    const getProducts = async () => {
-      const response = await fetch("https://fakestoreapi.com/products");
-      const data = await response.json();
-      // console.log(data);
-      setItems(
-        data.map((item) => {
-          return {
-            ...item,
-            addedToCart: false,
-            addToCartButtonValue: "Add to Cart",
-            addToCartButtonClass: "btn btn-info",
-          };
-        })
-      );
-      // console.log(data);
-    };
+  // useEffect(() => {
+  //   const getProducts = async () => {
+  //     const response = await fetch("https://fakestoreapi.com/products");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setItems(
+  //       data.map((item) => {
+  //         return {
+  //           ...item,
+  //           addedToCart: false,
+  //           addToCartButtonValue: "Add to Cart",
+  //           addToCartButtonClass: "btn btn-info",
+  //         };
+  //       })
+  //     );
+  //     // console.log(data);
+  //   };
 
-    getProducts();
-  }, []);
+  //   getProducts();
+  // }, []);
 
   return (
     <Router>
@@ -66,7 +67,7 @@ function App() {
             path="/"
             exact
             component={() => (
-              <Home
+              <ProductView
                 setCartItems={setCartItems}
                 items={items}
                 cartItems={cartItems}
@@ -88,17 +89,17 @@ function App() {
   );
 }
 
-const Home = ({ setCartItems, items, cartItems }) => {
-  return (
-    <div>
-      <h1>Home Page</h1>
-      <ProductView
-        setCartItems={setCartItems}
-        items={items}
-        cartItems={cartItems}
-      />
-    </div>
-  );
-};
+// const Home = ({ setCartItems, items, cartItems }) => {
+//   return (
+//     <div>
+//       {/* <h1>Home Page</h1> */}
+//       <ProductView
+//         setCartItems={setCartItems}
+//         items={items}
+//         cartItems={cartItems}
+//       />
+//     </div>
+//   );
+// };
 
 export default App;

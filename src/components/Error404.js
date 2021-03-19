@@ -6,7 +6,7 @@ const Error404 = (props) => {
       <h1 className="style-error-mark" style={styleErrorMark}>
         &#33;
       </h1>
-      <h1>Error:</h1>
+      <h1>Error: 404</h1>
       <h1>Page not found</h1>
       <button className="btn btn-primary">
         <a href="/">

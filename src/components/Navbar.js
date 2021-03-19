@@ -1,5 +1,11 @@
 const Navbar = ({ cartItems }) => {
   const countCartItems = cartItems.length;
+
+  // cartItems.forEach((item) => {
+  //   totalCartValue += (item.price * item.count);
+  // });
+  // totalCartValue = Math.round(totalCartValue).toFixed(2);
+
   return (
     <div className="navbar">
       <div className="navbar-item nav-item brand">

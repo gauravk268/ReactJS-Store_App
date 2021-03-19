@@ -6,8 +6,9 @@ const Cart = ({ cartItems, setCartItems }) => {
 
   const calculateTotalCartValue = () => {
     cartItems.forEach((item) => {
-      totalCartValue += item.price;
+      totalCartValue += item.price * item.count;
     });
+    totalCartValue = Math.round(totalCartValue).toFixed(2);
   };
 
   calculateTotalCartValue();
@@ -45,10 +46,12 @@ const Cart = ({ cartItems, setCartItems }) => {
         {ifCartEmpty()}
       </div>
       <div className="cart-items cart-detail">
-        <button className="btn btn-info ">
+        <button className="btn btn-info cart-total">
           Cart Total: {totalCartValue} $
         </button>
-        <button className="btn btn-primary ">Proceed to Buy</button>
+        <button className="btn btn-primary proceed-to-buy">
+          Proceed to Buy
+        </button>
       </div>
     </div>
   );
