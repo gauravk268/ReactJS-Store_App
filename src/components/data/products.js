@@ -68,7 +68,7 @@ const products = [
   },
   {
     id: 6,
-    title: "Solid Gold Petite Micropave ",
+    title: "Solid Gold Petite Micropave",
     count: 1,
     price: 168,
     description:

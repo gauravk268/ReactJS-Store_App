@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 
-const ProductCard = ({ item, setCartItems, cartItems }) => {
+const ProductCard = ({ item, items, setItems, cartItems, setCartItems }) => {
   const [displayItem, updateItem] = useState(item);
-  // const [count, setCount] = useState(0);
-
-  // const increment = () => {
-  //   setCount(count + 1);
-  // };
 
   const addItemToCart = () => {
     updateItem(
@@ -14,6 +9,19 @@ const ProductCard = ({ item, setCartItems, cartItems }) => {
       (displayItem.addToCartButtonClass = "btn btn-danger"),
       (displayItem.addToCartButtonValue = "Remove from Cart")
     );
+
+    // setCartItems(
+    //   cartItems.map((cartItem) => {
+    //     if (cartItem.id === item.id) {
+    //       return {
+    //         ...cartItem,
+    //         count: cartItem.count + 1,
+    //       };
+    //     } else {
+    //       return cartItem;
+    //     }
+    //   })
+    // );
 
     setCartItems([...cartItems, displayItem]);
   };

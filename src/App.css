@@ -17,8 +17,8 @@
   align-content: center;
   background: rgb(239, 227, 227);
 
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
 
   position: fixed;
   top: 0;
@@ -29,10 +29,10 @@
 
 .navbar-brand a,
 .navbar-item a {
-  color: black;
+  color: #f22;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-size: 1.5rem;
 }
 
 .navbar-child.navbar-right {
@@ -41,7 +41,7 @@
 }
 
 .navbar-right-child.navbar-item {
-  margin: 5px;
+  margin: 0 1.5rem;
 }
 
 /* .navbar-item {
@@ -355,5 +355,14 @@ a {
   .navbar {
     padding-left: 5vw;
     padding-right: 5vw;
+  }
+
+  .navbar-brand a,
+  .navbar-item a {
+    font-size: 1.2rem;
+  }
+
+  .navbar-right-child.navbar-item {
+    margin: 0 0.5rem;
   }
 }

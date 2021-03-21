@@ -43,6 +43,9 @@ function App() {
       const response = await fetch(
         "https://fakestoreapi.herokuapp.com/products"
       );
+      // const response = await fetch(
+      //   "https://cors-gauravk268-node-store-app.herokuapp.com/products"
+      // );
       const data = await response.json();
       console.log(data);
       setItems(
@@ -50,6 +53,7 @@ function App() {
           return {
             ...item,
             image: item.image.replace(/fakestoreapi/, "fakestoreapi.herokuapp"), // temporary method while api is down
+            count: 1,
             addedToCart: false,
             addToCartButtonValue: "Add to Cart",
             addToCartButtonClass: "btn btn-info",
@@ -72,9 +76,10 @@ function App() {
             exact
             component={() => (
               <ProductView
-                setCartItems={setCartItems}
                 items={items}
+                setItems={setItems}
                 cartItems={cartItems}
+                setCartItems={setCartItems}
               />
             )}
           />
