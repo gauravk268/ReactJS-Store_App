@@ -40,12 +40,12 @@ function App() {
 
   useEffect(() => {
     const getProducts = async () => {
-      const response = await fetch(
-        "https://fakestoreapi.herokuapp.com/products"
-      );
       // const response = await fetch(
-      //   "https://cors-gauravk268-node-store-app.herokuapp.com/products"
+      //   "https://fakestoreapi.herokuapp.com/products"
       // );
+      const response = await fetch(
+        "https://gauravk268-node-store-app.herokuapp.com/products"
+      );
       const data = await response.json();
       console.log(data);
       setItems(
