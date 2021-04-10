@@ -6,6 +6,7 @@ import {
   Cart,
   Contact,
   ProductView,
+  ScanQR,
   Error404,
 } from "./components/";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -91,6 +92,7 @@ function App() {
             )}
           />
           <Route path="/contact" component={() => <Contact />} />
+          <Route path="/scanqr" component={() => <ScanQR />} />
           <Route path="*" component={() => <Error404 />} />
         </Switch>
       </div>
