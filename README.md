@@ -3,6 +3,8 @@
 
 #### Want to see a hosted version? Goto: https://gauravk268dev-store-app.netlify.app
 
+#### Backend API hosted at: https://gauravk268-node-store-app.herokuapp.com
+
 ## Functionalities:
 - Show products on home screen
 - Add products to cart
